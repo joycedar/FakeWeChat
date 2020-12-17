@@ -11,7 +11,7 @@
 		0444790B258AE3F6005B550F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0444790A258AE3F6005B550F /* SceneDelegate.m */; };
 		0444790E258AE3F6005B550F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0444790D258AE3F6005B550F /* ViewController.m */; };
 		04447911258AE3F6005B550F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0444790F258AE3F6005B550F /* Main.storyboard */; };
-		04447913258AE3F8005B550F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04447912258AE3F8005B550F /* Assets.xcassets */; };
+		04447913258AE3F8005B550F /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04447912258AE3F8005B550F /* Image.xcassets */; };
 		04447916258AE3F8005B550F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04447914258AE3F8005B550F /* LaunchScreen.storyboard */; };
 		04447919258AE3F8005B550F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04447918258AE3F8005B550F /* main.m */; };
 		04447923258AE3F8005B550F /* FakeWeChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04447922258AE3F8005B550F /* FakeWeChatTests.m */; };
@@ -44,7 +44,7 @@
 		0444790C258AE3F6005B550F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		0444790D258AE3F6005B550F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		04447910258AE3F6005B550F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		04447912258AE3F8005B550F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04447912258AE3F8005B550F /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
 		04447915258AE3F8005B550F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04447917258AE3F8005B550F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04447918258AE3F8005B550F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -104,17 +104,10 @@
 		04447905258AE3F6005B550F /* FakeWeChat */ = {
 			isa = PBXGroup;
 			children = (
-				04447906258AE3F6005B550F /* AppDelegate.h */,
-				04447907258AE3F6005B550F /* AppDelegate.m */,
-				04447909258AE3F6005B550F /* SceneDelegate.h */,
-				0444790A258AE3F6005B550F /* SceneDelegate.m */,
+				04447945258AE722005B550F /* UI */,
+				04447941258AE4A6005B550F /* Main */,
 				0444790C258AE3F6005B550F /* ViewController.h */,
 				0444790D258AE3F6005B550F /* ViewController.m */,
-				0444790F258AE3F6005B550F /* Main.storyboard */,
-				04447912258AE3F8005B550F /* Assets.xcassets */,
-				04447914258AE3F8005B550F /* LaunchScreen.storyboard */,
-				04447917258AE3F8005B550F /* Info.plist */,
-				04447918258AE3F8005B550F /* main.m */,
 			);
 			path = FakeWeChat;
 			sourceTree = "<group>";
@@ -135,6 +128,45 @@
 				0444792F258AE3F8005B550F /* Info.plist */,
 			);
 			path = FakeWeChatUITests;
+			sourceTree = "<group>";
+		};
+		04447941258AE4A6005B550F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				04447943258AE68D005B550F /* Resource */,
+				04447942258AE667005B550F /* App */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		04447942258AE667005B550F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				04447917258AE3F8005B550F /* Info.plist */,
+				04447918258AE3F8005B550F /* main.m */,
+				04447914258AE3F8005B550F /* LaunchScreen.storyboard */,
+				0444790F258AE3F6005B550F /* Main.storyboard */,
+				04447906258AE3F6005B550F /* AppDelegate.h */,
+				04447907258AE3F6005B550F /* AppDelegate.m */,
+				04447909258AE3F6005B550F /* SceneDelegate.h */,
+				0444790A258AE3F6005B550F /* SceneDelegate.m */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		04447943258AE68D005B550F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				04447912258AE3F8005B550F /* Image.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		04447945258AE722005B550F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,7 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04447916258AE3F8005B550F /* LaunchScreen.storyboard in Resources */,
-				04447913258AE3F8005B550F /* Assets.xcassets in Resources */,
+				04447913258AE3F8005B550F /* Image.xcassets in Resources */,
 				04447911258AE3F6005B550F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,7 +475,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4JH6GP4QD2;
-				INFOPLIST_FILE = FakeWeChat/Info.plist;
+				INFOPLIST_FILE = FakeWeChat/Main/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,7 +493,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4JH6GP4QD2;
-				INFOPLIST_FILE = FakeWeChat/Info.plist;
+				INFOPLIST_FILE = FakeWeChat/Main/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -478,7 +510,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4JH6GP4QD2;
-				INFOPLIST_FILE = FakeWeChatTests/Info.plist;
+				INFOPLIST_FILE = FakeWeChat/Main/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -498,7 +530,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4JH6GP4QD2;
-				INFOPLIST_FILE = FakeWeChatTests/Info.plist;
+				INFOPLIST_FILE = FakeWeChat/Main/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -517,7 +549,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4JH6GP4QD2;
-				INFOPLIST_FILE = FakeWeChatUITests/Info.plist;
+				INFOPLIST_FILE = FakeWeChat/Main/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -535,7 +567,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4JH6GP4QD2;
-				INFOPLIST_FILE = FakeWeChatUITests/Info.plist;
+				INFOPLIST_FILE = FakeWeChat/Main/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
