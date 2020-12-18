@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import "FWCUI.h"
 
 @interface ViewController ()
 
@@ -14,12 +15,19 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
-  [super viewDidLoad];
-  self.view.backgroundColor = UIColor.whiteColor;
+    [super viewDidLoad];
+    self.view.backgroundColor = UIColor.whiteColor;
 
-  UILabel *label = [UILabel.alloc initWithFrame:CGRectMake(0, 0, 100, 100)];
-  label.text = self.navigationItem.title;
-  [self.view addSubview:label];
+    QMUIButton *btn = [QMUIButton.alloc qmui_initWithImage:nil title:@"日志"];
+    btn.frame = CGRectMake(100, 100, 100, 100);
+    [self.view addSubview:btn];
+    [btn addTarget:self action:@selector(testLog) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)testLog {
+    //    [QMUIConsole log:@"test log"];
+    QMUIConsole.sharedInstance.canShow = YES;
+    [QMUIConsole log:@"test"];
 }
 
 @end

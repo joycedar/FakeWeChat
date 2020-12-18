@@ -8,11 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		04447908258AE3F6005B550F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04447907258AE3F6005B550F /* AppDelegate.m */; };
-		0444790B258AE3F6005B550F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0444790A258AE3F6005B550F /* SceneDelegate.m */; };
 		0444790E258AE3F6005B550F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0444790D258AE3F6005B550F /* ViewController.m */; };
-		04447911258AE3F6005B550F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0444790F258AE3F6005B550F /* Main.storyboard */; };
 		04447913258AE3F8005B550F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04447912258AE3F8005B550F /* Assets.xcassets */; };
-		04447916258AE3F8005B550F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04447914258AE3F8005B550F /* LaunchScreen.storyboard */; };
 		04447919258AE3F8005B550F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04447918258AE3F8005B550F /* main.m */; };
 		04447923258AE3F8005B550F /* FakeWeChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04447922258AE3F8005B550F /* FakeWeChatTests.m */; };
 		0444792E258AE3F8005B550F /* FakeWeChatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0444792D258AE3F8005B550F /* FakeWeChatUITests.m */; };
@@ -44,13 +41,9 @@
 		04447903258AE3F6005B550F /* FakeWeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FakeWeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04447906258AE3F6005B550F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04447907258AE3F6005B550F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		04447909258AE3F6005B550F /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		0444790A258AE3F6005B550F /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		0444790C258AE3F6005B550F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		0444790D258AE3F6005B550F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		04447910258AE3F6005B550F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04447912258AE3F8005B550F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		04447915258AE3F8005B550F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04447917258AE3F8005B550F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04447918258AE3F8005B550F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0444791E258AE3F8005B550F /* FakeWeChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FakeWeChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -170,12 +163,8 @@
 			children = (
 				04447917258AE3F8005B550F /* Info.plist */,
 				04447918258AE3F8005B550F /* main.m */,
-				04447914258AE3F8005B550F /* LaunchScreen.storyboard */,
-				0444790F258AE3F6005B550F /* Main.storyboard */,
 				04447906258AE3F6005B550F /* AppDelegate.h */,
 				04447907258AE3F6005B550F /* AppDelegate.m */,
-				04447909258AE3F6005B550F /* SceneDelegate.h */,
-				0444790A258AE3F6005B550F /* SceneDelegate.m */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -353,9 +342,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04447916258AE3F8005B550F /* LaunchScreen.storyboard in Resources */,
 				04447913258AE3F8005B550F /* Assets.xcassets in Resources */,
-				04447911258AE3F6005B550F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,7 +475,6 @@
 				04447919258AE3F8005B550F /* main.m in Sources */,
 				044479BD258CBE62005B550F /* FWCColor.m in Sources */,
 				044479C5258CCB23005B550F /* FWCTabBarController.m in Sources */,
-				0444790B258AE3F6005B550F /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,25 +508,6 @@
 			targetProxy = 0444792A258AE3F8005B550F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		0444790F258AE3F6005B550F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				04447910258AE3F6005B550F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		04447914258AE3F8005B550F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				04447915258AE3F8005B550F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		04447930258AE3F9005B550F /* Debug */ = {
