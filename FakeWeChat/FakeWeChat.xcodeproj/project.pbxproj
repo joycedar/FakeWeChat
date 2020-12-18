@@ -125,6 +125,7 @@
 		04447905258AE3F6005B550F /* FakeWeChat */ = {
 			isa = PBXGroup;
 			children = (
+				04447943258AE68D005B550F /* Resource */,
 				044479B8258CBE62005B550F /* UI */,
 				04447955258C985A005B550F /* Module */,
 				04447941258AE4A6005B550F /* Main */,
@@ -155,7 +156,6 @@
 		04447941258AE4A6005B550F /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				04447943258AE68D005B550F /* Resource */,
 				04447942258AE667005B550F /* App */,
 			);
 			path = Main;
@@ -181,7 +181,8 @@
 			children = (
 				04447912258AE3F8005B550F /* Assets.xcassets */,
 			);
-			path = Resource;
+			name = Resource;
+			path = Main/Resource;
 			sourceTree = "<group>";
 		};
 		04447955258C985A005B550F /* Module */ = {
