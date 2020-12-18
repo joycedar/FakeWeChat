@@ -1,0 +1,18 @@
+---
+#Language: None, Cpp, Java, JavaScript, ObjC, Proto, TableGen, TextProto
+BasedOnStyle: LLVM
+IndentWidth: 4
+UseTab: Never
+AlignTrailingComments: true
+ColumnLimit: 120
+# AllowShortBlocksOnASingleLine: true
+AllowShortIfStatementsOnASingleLine: true
+BinPackArguments: false
+BinPackParameters: false
+ExperimentalAutoDetectBinPacking: false
+AllowAllParametersOfDeclarationOnNextLine: false
+
+---
+Language: ObjC
+IndentCaseLabels: true
+ObjCBlockIndentWidth: 4
