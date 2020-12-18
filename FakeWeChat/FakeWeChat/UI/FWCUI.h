@@ -14,4 +14,6 @@
 
 #import <QMUIKit/QMUIKit.h>
 
+#import "FWCColor.h"
+
 #endif /* FWCUI_h */

@@ -14,9 +14,12 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-}
+  [super viewDidLoad];
+  self.view.backgroundColor = UIColor.whiteColor;
 
+  UILabel *label = [UILabel.alloc initWithFrame:CGRectMake(0, 0, 100, 100)];
+  label.text = self.navigationItem.title;
+  [self.view addSubview:label];
+}
 
 @end

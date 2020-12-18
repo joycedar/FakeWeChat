@@ -17,6 +17,7 @@
 		04447923258AE3F8005B550F /* FakeWeChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04447922258AE3F8005B550F /* FakeWeChatTests.m */; };
 		0444792E258AE3F8005B550F /* FakeWeChatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0444792D258AE3F8005B550F /* FakeWeChatUITests.m */; };
 		044479BD258CBE62005B550F /* FWCColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 044479BA258CBE62005B550F /* FWCColor.m */; };
+		044479C5258CCB23005B550F /* FWCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044479C4258CCB23005B550F /* FWCTabBarController.m */; };
 		64D7A8D15B9800571991F5AD /* Pods_FakeWeChat_FakeWeChatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4BD92874AB96E65BB636A0C /* Pods_FakeWeChat_FakeWeChatUITests.framework */; };
 		97F86D0FDB96D7E6F5F69F1F /* Pods_FakeWeChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C27EAC3C4430FB4F3DF47754 /* Pods_FakeWeChat.framework */; };
 		ACDC0348312D0F38F296CA8F /* Pods_FakeWeChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77C1F6DE08BDB353B8F62A8D /* Pods_FakeWeChatTests.framework */; };
@@ -61,6 +62,8 @@
 		044479BA258CBE62005B550F /* FWCColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWCColor.m; sourceTree = "<group>"; };
 		044479BB258CBE62005B550F /* FWCColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWCColor.h; sourceTree = "<group>"; };
 		044479BC258CBE62005B550F /* FWCUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWCUI.h; sourceTree = "<group>"; };
+		044479C3258CCB23005B550F /* FWCTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCTabBarController.h; sourceTree = "<group>"; };
+		044479C4258CCB23005B550F /* FWCTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWCTabBarController.m; sourceTree = "<group>"; };
 		1F9188CFD04586F10287B332 /* Pods-FakeWeChat-FakeWeChatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FakeWeChat-FakeWeChatUITests.debug.xcconfig"; path = "Target Support Files/Pods-FakeWeChat-FakeWeChatUITests/Pods-FakeWeChat-FakeWeChatUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		624C472BB65A92A44B837C67 /* Pods-FakeWeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FakeWeChat.release.xcconfig"; path = "Target Support Files/Pods-FakeWeChat/Pods-FakeWeChat.release.xcconfig"; sourceTree = "<group>"; };
 		77C1F6DE08BDB353B8F62A8D /* Pods_FakeWeChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FakeWeChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,6 +159,7 @@
 		04447941258AE4A6005B550F /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				044479C1258CCA87005B550F /* TabBarController */,
 				04447942258AE667005B550F /* App */,
 			);
 			path = Main;
@@ -208,6 +212,15 @@
 				044479BB258CBE62005B550F /* FWCColor.h */,
 			);
 			path = Color;
+			sourceTree = "<group>";
+		};
+		044479C1258CCA87005B550F /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				044479C3258CCB23005B550F /* FWCTabBarController.h */,
+				044479C4258CCB23005B550F /* FWCTabBarController.m */,
+			);
+			path = TabBarController;
 			sourceTree = "<group>";
 		};
 		6367A34D15E88D946091111B /* Frameworks */ = {
@@ -474,6 +487,7 @@
 				04447908258AE3F6005B550F /* AppDelegate.m in Sources */,
 				04447919258AE3F8005B550F /* main.m in Sources */,
 				044479BD258CBE62005B550F /* FWCColor.m in Sources */,
+				044479C5258CCB23005B550F /* FWCTabBarController.m in Sources */,
 				0444790B258AE3F6005B550F /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
