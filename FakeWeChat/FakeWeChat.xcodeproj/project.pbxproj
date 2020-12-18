@@ -122,7 +122,6 @@
 			isa = PBXGroup;
 			children = (
 				04447955258C985A005B550F /* Module */,
-				04447945258AE722005B550F /* UI */,
 				04447941258AE4A6005B550F /* Main */,
 				0444790C258AE3F6005B550F /* ViewController.h */,
 				0444790D258AE3F6005B550F /* ViewController.m */,
@@ -178,13 +177,6 @@
 				04447912258AE3F8005B550F /* Assets.xcassets */,
 			);
 			path = Resource;
-			sourceTree = "<group>";
-		};
-		04447945258AE722005B550F /* UI */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UI;
 			sourceTree = "<group>";
 		};
 		04447955258C985A005B550F /* Module */ = {
