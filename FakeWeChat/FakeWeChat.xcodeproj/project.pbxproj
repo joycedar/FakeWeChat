@@ -57,6 +57,7 @@
 		044479BC258CBE62005B550F /* FWCUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWCUI.h; sourceTree = "<group>"; };
 		044479C3258CCB23005B550F /* FWCTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCTabBarController.h; sourceTree = "<group>"; };
 		044479C4258CCB23005B550F /* FWCTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWCTabBarController.m; sourceTree = "<group>"; };
+		04447A8D258DA36D005B550F /* FWCLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCLog.h; sourceTree = "<group>"; };
 		1F9188CFD04586F10287B332 /* Pods-FakeWeChat-FakeWeChatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FakeWeChat-FakeWeChatUITests.debug.xcconfig"; path = "Target Support Files/Pods-FakeWeChat-FakeWeChatUITests/Pods-FakeWeChat-FakeWeChatUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		624C472BB65A92A44B837C67 /* Pods-FakeWeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FakeWeChat.release.xcconfig"; path = "Target Support Files/Pods-FakeWeChat/Pods-FakeWeChat.release.xcconfig"; sourceTree = "<group>"; };
 		77C1F6DE08BDB353B8F62A8D /* Pods_FakeWeChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FakeWeChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +122,7 @@
 		04447905258AE3F6005B550F /* FakeWeChat */ = {
 			isa = PBXGroup;
 			children = (
+				04447A8C258DA172005B550F /* Utils */,
 				04447943258AE68D005B550F /* Resource */,
 				044479B8258CBE62005B550F /* UI */,
 				04447955258C985A005B550F /* Module */,
@@ -210,6 +212,14 @@
 				044479C4258CCB23005B550F /* FWCTabBarController.m */,
 			);
 			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		04447A8C258DA172005B550F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				04447A8D258DA36D005B550F /* FWCLog.h */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		6367A34D15E88D946091111B /* Frameworks */ = {

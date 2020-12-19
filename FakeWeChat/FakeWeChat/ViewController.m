@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import "FWCLog.h"
 #import "FWCUI.h"
 
 @interface ViewController ()
@@ -25,9 +26,9 @@
 }
 
 - (void)testLog {
-    //    [QMUIConsole log:@"test log"];
-    QMUIConsole.sharedInstance.canShow = YES;
-    [QMUIConsole log:@"test"];
+    //    QMUIConsole.sharedInstance.canShow = YES;
+    //    [QMUIConsole log:@"test"];
+    FWCInfo(@"test:%d %f", 100, 3.14);
 }
 
 @end
