@@ -16,6 +16,8 @@
 		044479BD258CBE62005B550F /* FWCColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 044479BA258CBE62005B550F /* FWCColor.m */; };
 		044479C5258CCB23005B550F /* FWCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044479C4258CCB23005B550F /* FWCTabBarController.m */; };
 		04447AE4258E10EB005B550F /* FWCAppLifeCycleProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 04447AE3258E10EB005B550F /* FWCAppLifeCycleProvider.m */; };
+		04447B17258E26F0005B550F /* FWCThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04447B16258E26F0005B550F /* FWCThemeManager.m */; };
+		04447B25258EEA43005B550F /* FWCThemeProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 04447B24258EEA43005B550F /* FWCThemeProvider.m */; };
 		64D7A8D15B9800571991F5AD /* Pods_FakeWeChat_FakeWeChatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4BD92874AB96E65BB636A0C /* Pods_FakeWeChat_FakeWeChatUITests.framework */; };
 		97F86D0FDB96D7E6F5F69F1F /* Pods_FakeWeChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C27EAC3C4430FB4F3DF47754 /* Pods_FakeWeChat.framework */; };
 		ACDC0348312D0F38F296CA8F /* Pods_FakeWeChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77C1F6DE08BDB353B8F62A8D /* Pods_FakeWeChatTests.framework */; };
@@ -62,6 +64,12 @@
 		04447AE2258E10EB005B550F /* FWCAppLifeCycleProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCAppLifeCycleProvider.h; sourceTree = "<group>"; };
 		04447AE3258E10EB005B550F /* FWCAppLifeCycleProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWCAppLifeCycleProvider.m; sourceTree = "<group>"; };
 		04447AEA258E118E005B550F /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		04447B15258E26F0005B550F /* FWCThemeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCThemeManager.h; sourceTree = "<group>"; };
+		04447B16258E26F0005B550F /* FWCThemeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWCThemeManager.m; sourceTree = "<group>"; };
+		04447B23258EEA43005B550F /* FWCThemeProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCThemeProvider.h; sourceTree = "<group>"; };
+		04447B24258EEA43005B550F /* FWCThemeProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWCThemeProvider.m; sourceTree = "<group>"; };
+		04447B29258EEAE7005B550F /* FWCColorMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCColorMacro.h; sourceTree = "<group>"; };
+		04447B2B258EEB5C005B550F /* FWCImageMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCImageMacro.h; sourceTree = "<group>"; };
 		1F9188CFD04586F10287B332 /* Pods-FakeWeChat-FakeWeChatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FakeWeChat-FakeWeChatUITests.debug.xcconfig"; path = "Target Support Files/Pods-FakeWeChat-FakeWeChatUITests/Pods-FakeWeChat-FakeWeChatUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		624C472BB65A92A44B837C67 /* Pods-FakeWeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FakeWeChat.release.xcconfig"; path = "Target Support Files/Pods-FakeWeChat/Pods-FakeWeChat.release.xcconfig"; sourceTree = "<group>"; };
 		77C1F6DE08BDB353B8F62A8D /* Pods_FakeWeChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FakeWeChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -195,6 +203,8 @@
 		044479B8258CBE62005B550F /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				04447B2A258EEB4F005B550F /* Image */,
+				04447B14258E26E1005B550F /* Theme */,
 				044479B9258CBE62005B550F /* Color */,
 				044479BC258CBE62005B550F /* FWCUI.h */,
 			);
@@ -206,6 +216,7 @@
 			children = (
 				044479BA258CBE62005B550F /* FWCColor.m */,
 				044479BB258CBE62005B550F /* FWCColor.h */,
+				04447B29258EEAE7005B550F /* FWCColorMacro.h */,
 			);
 			path = Color;
 			sourceTree = "<group>";
@@ -235,6 +246,25 @@
 				04447AE3258E10EB005B550F /* FWCAppLifeCycleProvider.m */,
 			);
 			path = AppLifeCycle;
+			sourceTree = "<group>";
+		};
+		04447B14258E26E1005B550F /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				04447B15258E26F0005B550F /* FWCThemeManager.h */,
+				04447B16258E26F0005B550F /* FWCThemeManager.m */,
+				04447B23258EEA43005B550F /* FWCThemeProvider.h */,
+				04447B24258EEA43005B550F /* FWCThemeProvider.m */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		04447B2A258EEB4F005B550F /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				04447B2B258EEB5C005B550F /* FWCImageMacro.h */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 		6367A34D15E88D946091111B /* Frameworks */ = {
@@ -497,6 +527,8 @@
 			files = (
 				0444790E258AE3F6005B550F /* ViewController.m in Sources */,
 				04447908258AE3F6005B550F /* AppDelegate.m in Sources */,
+				04447B17258E26F0005B550F /* FWCThemeManager.m in Sources */,
+				04447B25258EEA43005B550F /* FWCThemeProvider.m in Sources */,
 				04447919258AE3F8005B550F /* main.m in Sources */,
 				04447AE4258E10EB005B550F /* FWCAppLifeCycleProvider.m in Sources */,
 				044479BD258CBE62005B550F /* FWCColor.m in Sources */,

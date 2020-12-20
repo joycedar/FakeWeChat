@@ -10,8 +10,9 @@
  https://res.wx.qq.com/a/wx_fed/wedesign/res/static/res/2b7c/WeChat_Standard_Color_Guidelines_201703.pdf
  */
 
-#import "FWCUI.h"
+#import "FWCColorMacro.h"
 #import <Foundation/Foundation.h>
+#import <QMUIKit/QMUIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

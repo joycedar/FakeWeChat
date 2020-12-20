@@ -20,14 +20,13 @@
     self.view.backgroundColor = UIColor.whiteColor;
 
     QMUIButton *btn = [QMUIButton.alloc qmui_initWithImage:nil title:@"日志"];
+    btn.backgroundColor = FWCColorThemed(UIColor.redColor, UIColor.whiteColor);
     btn.frame = CGRectMake(100, 100, 100, 100);
     [self.view addSubview:btn];
     [btn addTarget:self action:@selector(testLog) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)testLog {
-    //    QMUIConsole.sharedInstance.canShow = YES;
-    //    [QMUIConsole log:@"test"];
     FWCInfo(@"test:%d %f", 100, 3.14);
 }
 

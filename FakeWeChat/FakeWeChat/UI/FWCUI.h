@@ -16,4 +16,6 @@
 
 #import "FWCColor.h"
 
+#import "FWCImageMacro.h"
+
 #endif /* FWCUI_h */
