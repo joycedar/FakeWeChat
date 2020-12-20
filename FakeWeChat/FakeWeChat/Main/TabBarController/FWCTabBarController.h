@@ -5,11 +5,11 @@
 //  Created by 鞠欣诚 on 2020/12/18.
 //
 
-#import <UIKit/UIKit.h>
+#import "FWCUI.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FWCTabBarController : UITabBarController
+@interface FWCTabBarController : QMUITabBarViewController
 
 @end
 

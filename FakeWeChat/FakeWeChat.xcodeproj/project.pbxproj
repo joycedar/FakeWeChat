@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		04447908258AE3F6005B550F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04447907258AE3F6005B550F /* AppDelegate.m */; };
-		0444790E258AE3F6005B550F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0444790D258AE3F6005B550F /* ViewController.m */; };
 		04447913258AE3F8005B550F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04447912258AE3F8005B550F /* Assets.xcassets */; };
 		04447919258AE3F8005B550F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04447918258AE3F8005B550F /* main.m */; };
 		04447923258AE3F8005B550F /* FakeWeChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04447922258AE3F8005B550F /* FakeWeChatTests.m */; };
@@ -18,6 +17,12 @@
 		04447AE4258E10EB005B550F /* FWCAppLifeCycleProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 04447AE3258E10EB005B550F /* FWCAppLifeCycleProvider.m */; };
 		04447B17258E26F0005B550F /* FWCThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04447B16258E26F0005B550F /* FWCThemeManager.m */; };
 		04447B25258EEA43005B550F /* FWCThemeProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 04447B24258EEA43005B550F /* FWCThemeProvider.m */; };
+		04447B3D258EF8E7005B550F /* FWCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04447B3C258EF8E7005B550F /* FWCBaseViewController.m */; };
+		04447B46258EF93B005B550F /* FWCBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04447B45258EF93B005B550F /* FWCBaseNavigationController.m */; };
+		04447B4D258EF9B7005B550F /* FWCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04447B4C258EF9B7005B550F /* FWCHomeViewController.m */; };
+		04447B53258EF9D1005B550F /* FWCContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04447B52258EF9D1005B550F /* FWCContactViewController.m */; };
+		04447B5B258EF9F7005B550F /* FWCDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04447B5A258EF9F7005B550F /* FWCDiscoverViewController.m */; };
+		04447B62258EFA09005B550F /* FWCMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04447B61258EFA09005B550F /* FWCMeViewController.m */; };
 		64D7A8D15B9800571991F5AD /* Pods_FakeWeChat_FakeWeChatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4BD92874AB96E65BB636A0C /* Pods_FakeWeChat_FakeWeChatUITests.framework */; };
 		97F86D0FDB96D7E6F5F69F1F /* Pods_FakeWeChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C27EAC3C4430FB4F3DF47754 /* Pods_FakeWeChat.framework */; };
 		ACDC0348312D0F38F296CA8F /* Pods_FakeWeChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77C1F6DE08BDB353B8F62A8D /* Pods_FakeWeChatTests.framework */; };
@@ -44,8 +49,6 @@
 		04447903258AE3F6005B550F /* FakeWeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FakeWeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04447906258AE3F6005B550F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04447907258AE3F6005B550F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0444790C258AE3F6005B550F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0444790D258AE3F6005B550F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		04447912258AE3F8005B550F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04447917258AE3F8005B550F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04447918258AE3F8005B550F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -70,6 +73,18 @@
 		04447B24258EEA43005B550F /* FWCThemeProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWCThemeProvider.m; sourceTree = "<group>"; };
 		04447B29258EEAE7005B550F /* FWCColorMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCColorMacro.h; sourceTree = "<group>"; };
 		04447B2B258EEB5C005B550F /* FWCImageMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCImageMacro.h; sourceTree = "<group>"; };
+		04447B3B258EF8E7005B550F /* FWCBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCBaseViewController.h; sourceTree = "<group>"; };
+		04447B3C258EF8E7005B550F /* FWCBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWCBaseViewController.m; sourceTree = "<group>"; };
+		04447B44258EF93B005B550F /* FWCBaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCBaseNavigationController.h; sourceTree = "<group>"; };
+		04447B45258EF93B005B550F /* FWCBaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWCBaseNavigationController.m; sourceTree = "<group>"; };
+		04447B4B258EF9B7005B550F /* FWCHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCHomeViewController.h; sourceTree = "<group>"; };
+		04447B4C258EF9B7005B550F /* FWCHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWCHomeViewController.m; sourceTree = "<group>"; };
+		04447B51258EF9D1005B550F /* FWCContactViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCContactViewController.h; sourceTree = "<group>"; };
+		04447B52258EF9D1005B550F /* FWCContactViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWCContactViewController.m; sourceTree = "<group>"; };
+		04447B59258EF9F7005B550F /* FWCDiscoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCDiscoverViewController.h; sourceTree = "<group>"; };
+		04447B5A258EF9F7005B550F /* FWCDiscoverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWCDiscoverViewController.m; sourceTree = "<group>"; };
+		04447B60258EFA09005B550F /* FWCMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCMeViewController.h; sourceTree = "<group>"; };
+		04447B61258EFA09005B550F /* FWCMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWCMeViewController.m; sourceTree = "<group>"; };
 		1F9188CFD04586F10287B332 /* Pods-FakeWeChat-FakeWeChatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FakeWeChat-FakeWeChatUITests.debug.xcconfig"; path = "Target Support Files/Pods-FakeWeChat-FakeWeChatUITests/Pods-FakeWeChat-FakeWeChatUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		624C472BB65A92A44B837C67 /* Pods-FakeWeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FakeWeChat.release.xcconfig"; path = "Target Support Files/Pods-FakeWeChat/Pods-FakeWeChat.release.xcconfig"; sourceTree = "<group>"; };
 		77C1F6DE08BDB353B8F62A8D /* Pods_FakeWeChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FakeWeChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,8 +154,6 @@
 				044479B8258CBE62005B550F /* UI */,
 				04447955258C985A005B550F /* Module */,
 				04447941258AE4A6005B550F /* Main */,
-				0444790C258AE3F6005B550F /* ViewController.h */,
-				0444790D258AE3F6005B550F /* ViewController.m */,
 			);
 			path = FakeWeChat;
 			sourceTree = "<group>";
@@ -166,6 +179,7 @@
 		04447941258AE4A6005B550F /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				04447B3A258EF8BE005B550F /* BaseViewController */,
 				04447AE1258E10AF005B550F /* AppLifeCycle */,
 				044479C1258CCA87005B550F /* TabBarController */,
 				04447942258AE667005B550F /* App */,
@@ -196,6 +210,10 @@
 		04447955258C985A005B550F /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				04447B5F258EF9FD005B550F /* Me */,
+				04447B58258EF9E5005B550F /* Discover */,
+				04447B57258EF9D7005B550F /* Contact */,
+				04447B4A258EF9A3005B550F /* Home */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -265,6 +283,53 @@
 				04447B2B258EEB5C005B550F /* FWCImageMacro.h */,
 			);
 			path = Image;
+			sourceTree = "<group>";
+		};
+		04447B3A258EF8BE005B550F /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				04447B3B258EF8E7005B550F /* FWCBaseViewController.h */,
+				04447B3C258EF8E7005B550F /* FWCBaseViewController.m */,
+				04447B44258EF93B005B550F /* FWCBaseNavigationController.h */,
+				04447B45258EF93B005B550F /* FWCBaseNavigationController.m */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		04447B4A258EF9A3005B550F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				04447B4B258EF9B7005B550F /* FWCHomeViewController.h */,
+				04447B4C258EF9B7005B550F /* FWCHomeViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		04447B57258EF9D7005B550F /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				04447B51258EF9D1005B550F /* FWCContactViewController.h */,
+				04447B52258EF9D1005B550F /* FWCContactViewController.m */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		04447B58258EF9E5005B550F /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				04447B59258EF9F7005B550F /* FWCDiscoverViewController.h */,
+				04447B5A258EF9F7005B550F /* FWCDiscoverViewController.m */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		04447B5F258EF9FD005B550F /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				04447B60258EFA09005B550F /* FWCMeViewController.h */,
+				04447B61258EFA09005B550F /* FWCMeViewController.m */,
+			);
+			path = Me;
 			sourceTree = "<group>";
 		};
 		6367A34D15E88D946091111B /* Frameworks */ = {
@@ -525,14 +590,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0444790E258AE3F6005B550F /* ViewController.m in Sources */,
+				04447B53258EF9D1005B550F /* FWCContactViewController.m in Sources */,
+				04447B62258EFA09005B550F /* FWCMeViewController.m in Sources */,
+				04447B3D258EF8E7005B550F /* FWCBaseViewController.m in Sources */,
 				04447908258AE3F6005B550F /* AppDelegate.m in Sources */,
+				04447B46258EF93B005B550F /* FWCBaseNavigationController.m in Sources */,
 				04447B17258E26F0005B550F /* FWCThemeManager.m in Sources */,
 				04447B25258EEA43005B550F /* FWCThemeProvider.m in Sources */,
 				04447919258AE3F8005B550F /* main.m in Sources */,
 				04447AE4258E10EB005B550F /* FWCAppLifeCycleProvider.m in Sources */,
 				044479BD258CBE62005B550F /* FWCColor.m in Sources */,
 				044479C5258CCB23005B550F /* FWCTabBarController.m in Sources */,
+				04447B4D258EF9B7005B550F /* FWCHomeViewController.m in Sources */,
+				04447B5B258EF9F7005B550F /* FWCDiscoverViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
