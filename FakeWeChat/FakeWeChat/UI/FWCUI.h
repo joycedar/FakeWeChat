@@ -18,4 +18,6 @@
 
 #import "FWCImageMacro.h"
 
+#import "UIView+FWCUI.h"
+
 #endif /* FWCUI_h */

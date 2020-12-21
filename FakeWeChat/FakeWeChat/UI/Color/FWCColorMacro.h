@@ -12,4 +12,6 @@
 
 #define FWCColorThemed(_default, _dark) [FWCThemeProvider colorWithDefaultColor:_default darkColor:_dark]
 
+#define FWCHexColor(_hex) [UIColor qmui_colorWithHexString:_hex]
+
 #endif /* FWCColorMacro_h */
