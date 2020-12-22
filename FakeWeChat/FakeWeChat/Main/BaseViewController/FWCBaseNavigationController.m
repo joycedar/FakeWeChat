@@ -9,4 +9,11 @@
 
 @implementation FWCBaseNavigationController
 
+- (void)didInitialize {
+    [super didInitialize];
+    self.view.backgroundColor = FWCColor.background;
+
+    self.navigationBar.translucent = NO;
+}
+
 @end

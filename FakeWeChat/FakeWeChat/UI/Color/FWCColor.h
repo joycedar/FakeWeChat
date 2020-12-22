@@ -35,6 +35,10 @@ NS_ASSUME_NONNULL_BEGIN
 + (UIColor *)supportingBlue1;
 + (UIColor *)supportingBlue2;
 
+// common colors
++ (UIColor *)background;
++ (UIColor *)normalText;
+
 @end
 
 NS_ASSUME_NONNULL_END
