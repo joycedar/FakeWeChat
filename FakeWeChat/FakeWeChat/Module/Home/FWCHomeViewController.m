@@ -19,13 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    UIView *view = [UIView.alloc initWithFrame:CGRectMake(0, SCREEN_HEIGHT - 100, 100, 100)];
-    view.backgroundColor = UIColor.redColor;
-    [self.view addSubview:view];
-
-    UITabBarItem *item = self.navigationController.tabBarItem;
-    item.fwc_badgeValue = 50;
+    self.fwc_tabBarItem.fwc_badgeValue = 200;
 }
 
 @end

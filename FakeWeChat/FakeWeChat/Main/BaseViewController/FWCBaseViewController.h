@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface FWCBaseViewController : QMUICommonViewController
 
+@property(nonatomic, readonly) UITabBarItem *fwc_tabBarItem;
+
 @end
 
 NS_ASSUME_NONNULL_END

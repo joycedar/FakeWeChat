@@ -9,4 +9,8 @@
 
 @implementation FWCBaseViewController
 
+- (UITabBarItem *)fwc_tabBarItem {
+    return self.navigationController.tabBarItem;
+}
+
 @end
