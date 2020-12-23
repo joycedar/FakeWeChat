@@ -12,6 +12,8 @@
 - (void)didInitialize {
     [super didInitialize];
     self.view.backgroundColor = FWCColor.background;
+
+    self.titleView.titleLabel.font = UIFontBoldMake(18);
 }
 
 #pragma mark NavigationController外观
