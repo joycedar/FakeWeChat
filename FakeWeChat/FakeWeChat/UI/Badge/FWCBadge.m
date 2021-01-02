@@ -6,6 +6,7 @@
 //
 
 #import "FWCBadge.h"
+#import "FWCLog.h"
 #import "FWCUI.h"
 
 #define FWCBadgeBackgroundColor FWCHexColor(@"FF5050")
@@ -67,7 +68,10 @@
 
 - (void)setValue:(int)value {
     _value = value;
-    if (value < 100) {
+    if (value <= 0) {
+        FWCError(@"Badeg value must up to 1, now is %d.", value);
+        self.text = @"0";
+    } else if (value < 100) {
         self.showMask = NO;
         self.text = [NSString stringWithFormat:@"%d", value];
     } else {
