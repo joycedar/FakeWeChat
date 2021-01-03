@@ -11,6 +11,8 @@ target 'FakeWeChat' do
 
   pod 'YYKit'
 
+  pod 'YogaKit', '~> 1.7'
+
   target 'FakeWeChatTests' do
     inherit! :search_paths
     # Pods for testing

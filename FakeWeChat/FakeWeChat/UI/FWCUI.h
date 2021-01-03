@@ -14,6 +14,8 @@
 
 #import <QMUIKit/QMUIKit.h>
 
+#import <YogaKit/UIView+Yoga.h>
+
 #import "FWCColor.h"
 
 #import "FWCImageMacro.h"
