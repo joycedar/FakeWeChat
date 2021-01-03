@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04447908258AE3F6005B550F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04447907258AE3F6005B550F /* AppDelegate.m */; };
-		04447913258AE3F8005B550F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04447912258AE3F8005B550F /* Assets.xcassets */; };
+		04447913258AE3F8005B550F /* Main.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04447912258AE3F8005B550F /* Main.xcassets */; };
 		04447919258AE3F8005B550F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04447918258AE3F8005B550F /* main.m */; };
 		04447923258AE3F8005B550F /* FakeWeChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04447922258AE3F8005B550F /* FakeWeChatTests.m */; };
 		0444792E258AE3F8005B550F /* FakeWeChatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0444792D258AE3F8005B550F /* FakeWeChatUITests.m */; };
@@ -26,6 +26,8 @@
 		046D5790258F8F1B00CCFF47 /* UIView+FWCUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D578F258F8F1B00CCFF47 /* UIView+FWCUI.m */; };
 		046D579D258F94AC00CCFF47 /* FWCBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D579C258F94AC00CCFF47 /* FWCBadge.m */; };
 		046D57A32590C66C00CCFF47 /* UITabBarItem+FWCBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D57A22590C66C00CCFF47 /* UITabBarItem+FWCBadge.m */; };
+		04FCCC592592F56900A84A85 /* FWCBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FCCC582592F56900A84A85 /* FWCBaseTableViewCell.m */; };
+		04FCCC6425A0A80000A84A85 /* FWCBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FCCC6325A0A80000A84A85 /* FWCBaseTableViewController.m */; };
 		64D7A8D15B9800571991F5AD /* Pods_FakeWeChat_FakeWeChatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4BD92874AB96E65BB636A0C /* Pods_FakeWeChat_FakeWeChatUITests.framework */; };
 		97F86D0FDB96D7E6F5F69F1F /* Pods_FakeWeChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C27EAC3C4430FB4F3DF47754 /* Pods_FakeWeChat.framework */; };
 		ACDC0348312D0F38F296CA8F /* Pods_FakeWeChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77C1F6DE08BDB353B8F62A8D /* Pods_FakeWeChatTests.framework */; };
@@ -52,7 +54,7 @@
 		04447903258AE3F6005B550F /* FakeWeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FakeWeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04447906258AE3F6005B550F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04447907258AE3F6005B550F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		04447912258AE3F8005B550F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04447912258AE3F8005B550F /* Main.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Main.xcassets; sourceTree = "<group>"; };
 		04447917258AE3F8005B550F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04447918258AE3F8005B550F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0444791E258AE3F8005B550F /* FakeWeChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FakeWeChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +96,10 @@
 		046D579C258F94AC00CCFF47 /* FWCBadge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWCBadge.m; sourceTree = "<group>"; };
 		046D57A12590C66C00CCFF47 /* UITabBarItem+FWCBadge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBarItem+FWCBadge.h"; sourceTree = "<group>"; };
 		046D57A22590C66C00CCFF47 /* UITabBarItem+FWCBadge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBarItem+FWCBadge.m"; sourceTree = "<group>"; };
+		04FCCC572592F56900A84A85 /* FWCBaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCBaseTableViewCell.h; sourceTree = "<group>"; };
+		04FCCC582592F56900A84A85 /* FWCBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWCBaseTableViewCell.m; sourceTree = "<group>"; };
+		04FCCC6225A0A80000A84A85 /* FWCBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCBaseTableViewController.h; sourceTree = "<group>"; };
+		04FCCC6325A0A80000A84A85 /* FWCBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWCBaseTableViewController.m; sourceTree = "<group>"; };
 		1F9188CFD04586F10287B332 /* Pods-FakeWeChat-FakeWeChatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FakeWeChat-FakeWeChatUITests.debug.xcconfig"; path = "Target Support Files/Pods-FakeWeChat-FakeWeChatUITests/Pods-FakeWeChat-FakeWeChatUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		624C472BB65A92A44B837C67 /* Pods-FakeWeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FakeWeChat.release.xcconfig"; path = "Target Support Files/Pods-FakeWeChat/Pods-FakeWeChat.release.xcconfig"; sourceTree = "<group>"; };
 		77C1F6DE08BDB353B8F62A8D /* Pods_FakeWeChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FakeWeChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -210,7 +216,7 @@
 		04447943258AE68D005B550F /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				04447912258AE3F8005B550F /* Assets.xcassets */,
+				04FCCC5E25A0A44500A84A85 /* Image */,
 			);
 			name = Resource;
 			path = Main/Resource;
@@ -230,6 +236,7 @@
 		044479B8258CBE62005B550F /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				04FCCC4A2592F43100A84A85 /* Cell */,
 				046D579A258F948600CCFF47 /* Badge */,
 				046D578D258F8F0900CCFF47 /* Category */,
 				04447B2A258EEB4F005B550F /* Image */,
@@ -303,6 +310,8 @@
 				04447B3C258EF8E7005B550F /* FWCBaseViewController.m */,
 				04447B44258EF93B005B550F /* FWCBaseNavigationController.h */,
 				04447B45258EF93B005B550F /* FWCBaseNavigationController.m */,
+				04FCCC6225A0A80000A84A85 /* FWCBaseTableViewController.h */,
+				04FCCC6325A0A80000A84A85 /* FWCBaseTableViewController.m */,
 			);
 			path = BaseViewController;
 			sourceTree = "<group>";
@@ -361,6 +370,23 @@
 				046D57A22590C66C00CCFF47 /* UITabBarItem+FWCBadge.m */,
 			);
 			path = Badge;
+			sourceTree = "<group>";
+		};
+		04FCCC4A2592F43100A84A85 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				04FCCC572592F56900A84A85 /* FWCBaseTableViewCell.h */,
+				04FCCC582592F56900A84A85 /* FWCBaseTableViewCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		04FCCC5E25A0A44500A84A85 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				04447912258AE3F8005B550F /* Main.xcassets */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 		6367A34D15E88D946091111B /* Frameworks */ = {
@@ -493,7 +519,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04447913258AE3F8005B550F /* Assets.xcassets in Resources */,
+				04447913258AE3F8005B550F /* Main.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,12 +647,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04FCCC592592F56900A84A85 /* FWCBaseTableViewCell.m in Sources */,
 				04447B53258EF9D1005B550F /* FWCContactViewController.m in Sources */,
 				04447B62258EFA09005B550F /* FWCMeViewController.m in Sources */,
 				04447B3D258EF8E7005B550F /* FWCBaseViewController.m in Sources */,
 				04447908258AE3F6005B550F /* AppDelegate.m in Sources */,
 				04447B46258EF93B005B550F /* FWCBaseNavigationController.m in Sources */,
 				04447B17258E26F0005B550F /* FWCThemeManager.m in Sources */,
+				04FCCC6425A0A80000A84A85 /* FWCBaseTableViewController.m in Sources */,
 				046D57A32590C66C00CCFF47 /* UITabBarItem+FWCBadge.m in Sources */,
 				04447B25258EEA43005B550F /* FWCThemeProvider.m in Sources */,
 				04447919258AE3F8005B550F /* main.m in Sources */,

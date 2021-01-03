@@ -6,6 +6,9 @@
 //
 
 #import "FWCMeViewController.h"
+#import "FWCBaseTableViewCell.h"
+#import "FWCUI.h"
+#import <YYKit/YYKit.h>
 
 @interface FWCMeViewController ()
 
@@ -15,17 +18,32 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - TableView
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 3;
 }
-*/
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    FWCBaseTableViewCell *cell;
+    cell = [tableView dequeueReusableCellWithIdentifier:FWCBaseTableViewCell.className];
+    if (!cell) {
+        cell = [FWCBaseTableViewCell.alloc initWithStyle:UITableViewCellStyleDefault
+                                         reuseIdentifier:FWCBaseTableViewCell.className];
+        cell.title = @"测试cell";
+        [cell setTitleToDefaultPosition];
+        [cell setArrowViewToDefaultPosition];
+    }
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return FWCBaseTableViewCell.cellHeight;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+}
 
 @end

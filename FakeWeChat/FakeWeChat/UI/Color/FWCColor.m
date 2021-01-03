@@ -68,6 +68,10 @@
     return FWCColorThemed(FWCColor.coreGrey4, FWCHexColor(@"0F1011"));
 }
 
++ (UIColor *)cellBackground {
+    return FWCColorThemed(UIColor.whiteColor, FWCColor.coreGrey1);
+}
+
 + (UIColor *)normalText {
     return FWCColorThemed(UIColor.blackColor, UIColor.whiteColor);
 }
